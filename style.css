@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #041224;
+    --card-bg: #0a1c35;
+    --cyan: #00ffff;
+    --purple: #9000ff;
+    --green-tech: #00ff88;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.tech-font {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-cyan { color: var(--cyan) !important; }
+.text-purple { color: var(--purple) !important; }
+
+.btn-cyan {
+    background-color: var(--cyan);
+    color: #000;
+}
+.btn-cyan:hover {
+    background-color: #00cccc;
+}
+
+.bg-darker {
+    background-color: #020a16;
+}
+
+.border-purple {
+    border-top: 3px solid var(--purple) !important;
+}
+
+.hero-section {
+    background: url('img/fondo.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-content {
+    background-color: #020a16;
+    max-width: 900px;
+    width: 100%;
+}
+
+.custom-anchor .transition-color {
+    transition: color 0.3s ease;
+}
+.custom-anchor:hover .transition-color {
+    color: var(--cyan) !important;
+    cursor: pointer;
+}
+
+.custom-card {
+    border: 1px solid #1f3552 !important;
+    background-color: var(--card-bg) !important;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan) !important;
+}
+.text-sm {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.encapsulamiento-section {
+    background: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop') no-repeat right center/cover;
+}
+.bg-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(4, 18, 36, 0.85);
+}
+
+.scrolling-text {
+    animation: scrollText 15s linear infinite;
+    color: var(--green-tech) !important;
+}
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 4px;
+    transition: transform 0.2s ease;
+}
+.social-circle:hover {
+    transform: scale(1.1);
+}
+.bg-fb { background-color: #1877F2; }
+.bg-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.bg-yt { background-color: #FF0000; }
+.bg-x { background-color: #000000; border: 1px solid #444; }
+.bg-in { background-color: #0A66C2; }
+.bg-tk { background-color: #000000; border: 1px solid #444; }
