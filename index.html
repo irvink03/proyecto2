@@ -11,7 +11,6 @@
 </head>
 <body class="text-light">
 
-    <!-- SE AGREGÓ EL ID "inicio" AQUÍ -->
     <header id="inicio" class="hero-section">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4 pb-3 fixed-top">
             <div class="container border-bottom border-secondary pb-3">
@@ -24,7 +23,6 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <!-- AHORA APUNTA A "#inicio" CON DESLIZAMIENTO SUAVE -->
                             <a class="nav-link text-cyan active mx-3" href="#inicio">HOME</a>
                         </li>
                         <li class="nav-item">
@@ -185,41 +183,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.remove('bg-transparent');
-                navbar.style.backgroundColor = 'rgba(4, 18, 36, 0.95)';
-                navbar.style.transition = 'background-color 0.3s ease';
-            } else {
-                navbar.style.backgroundColor = 'transparent';
-            }
-        });
-
-        const btnVerificar = document.querySelector('.encapsulamiento-section .btn-cyan');
-        if (btnVerificar) {
-            btnVerificar.addEventListener('click', () => {
-                alert('¡Instrucción verificada! 🚀 El proceso de encapsulamiento TCP/IP funciona correctamente.');
-                btnVerificar.textContent = '¡Verificado ✓!';
-                btnVerificar.style.backgroundColor = '#00ff88';
-                btnVerificar.style.color = '#000';
-            });
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

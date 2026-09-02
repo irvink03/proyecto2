@@ -30,4 +30,4 @@ if (btnVerificar) {
         btnVerificar.style.backgroundColor = '#00ff88';
         btnVerificar.style.color = '#000';
     });
-});
+}
